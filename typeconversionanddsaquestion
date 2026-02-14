@@ -106,3 +106,16 @@ print(d3)                                                     d3[i]=d1[i]
                                                               d3[i]=d2[i]                                                                        if i not in d1:
                                                   print(d3)                                                                                         d3[i]=d1[i]
                                                                                                                                              print(d3)
+
+Q. students = {'A': 85,'B': 72,'C': 91,'D': 65,'E': 78}          
+#o/p- {'above_80':[A,C],'70to80':[B,D],'below_70':[D]}
+
+d={'above_80':[],'70to80':[],'below_70':[]}
+for student in students:
+    if students[student]>80:
+        d['above_80'].append(student)
+    elif (students[student]>70 and students[student]<80):
+        d['70to80'].append(student)
+    else:
+        d['below_70'].append(student)
+print(d)
