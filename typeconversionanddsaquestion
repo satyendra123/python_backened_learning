@@ -82,5 +82,6 @@ for i in l1:
         d['odd'].append(i)
         
 print(d)
-    
-    
+
+Q.7 l1 = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
+
