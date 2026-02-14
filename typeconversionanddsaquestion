@@ -63,11 +63,11 @@ Q.5 d = {'a':1, 'b':2, 'c':1, 'd':2, 'e':3} mere pass ye input hai aur mai outpu
 o/p- {'1':[a,c], '2':[b,d],'3':e}                                  alternate method:      d = {'a':1, 'b':2, 'c':1, 'd':2, 'e':3}
                                                                                           unique_values = set(d.values())
 result = {}                                                                               result = {}
-for key in d:                                                                             for val in unique_values:
-    value = d[key]                                                                             keys_list = []
+for i in d:                                                                             for val in unique_values:
+    value = d[i]                                                                             keys_list = []
     if value not in result:                                                                    for key in d:
         result[value] = []                                                                         if d[key] == val:
-    result[value].append(key)                                                                         keys_list.append(key)
+    result[value].append(i)                                                                         keys_list.append(key)
                                                                                                    result[val] = keys_list
 print(result)                                                                              print(result)
 
