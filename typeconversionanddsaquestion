@@ -85,3 +85,23 @@ print(d)
 
 Q.7 l1 = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
 
+
+
+
+
+
+
+
+Q.8)                                        
+d1 = {'a':10,'b':20,'c':30}                       d1 = {'a':10,'b':20,'c':30}
+d2 = {'b':15,'c':45,'d':40}                       d2 = {'b':15,'c':45,'d':40}
+o/p- {'b':20,'c':30}                              o/p- {'b':15,'c':30}
+
+d3={}                                             d3={}
+for i in d1:                                      for i in d1:
+    if i in d2:                                       if i in d2:
+        d3[i]=d1[i]                                       if(d1[i]<d2[i]):
+print(d3)                                                     d3[i]=d1[i]
+                                                          else:
+                                                              d3[i]=d2[i]
+                                                  print(d3)
