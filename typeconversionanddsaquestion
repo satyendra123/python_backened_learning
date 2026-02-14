@@ -59,7 +59,7 @@ for k in d2:
         
 print(d3)
         
-Q.5 d = {'a':1, 'b':2, 'c':1, 'd':2, 'e':3} mere pass ye input hai aur mai output chahta hu kuch is tarah ka
+Q.5 d = {'a':1, 'b':2, 'c':1, 'd':2, 'e':3} mere pass ye input hai aur mai output chahta hu kuch is tarah ka. ise hum inverting dictionary bhi bolte hai
 o/p- {'1':[a,c], '2':[b,d],'3':e}                                  alternate method:      d = {'a':1, 'b':2, 'c':1, 'd':2, 'e':3}
                                                                                           unique_values = set(d.values())
 result = {}                                                                               result = {}
