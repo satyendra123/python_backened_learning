@@ -40,3 +40,22 @@ Note- using the zip also we can do this things like zip(l1,l2) so jab bhi hum zi
 Note- it is not necessary that it combine only the same type of data. if different type of data is there then also it will combine in a tuple format
 
 
+Q.4  0/p- {'a':15,'b':35,'c':30,'d':40}
+d1 = {'a':10,'b':20,'c':30}
+d2 = {'a':5,'b':15,'d':40}
+
+d3={}
+for k in d1:
+    if k in d3:
+        d3[k]=d1[k]+d2[k]
+    else:
+        d3[k]=d1[k]
+
+for k in d2:
+    if k in d3:
+        d3[k]=d3[k]+d2[k]
+    else:
+        d3[k]=d2[k]
+        
+print(d3)
+        
