@@ -1,0 +1,42 @@
+Q.1 d = {'a':1,'b':2,'c':3}   o/p- [('a',1),('b',2),('c',3)]
+Ans (i) l1=list(d.items())
+   (ii) l1=[]
+        for i in l1:
+            l1.push((i,d[i]))
+        print(l1)
+  
+Q.2  [('a',1),('b',2),('c',3)]  o/p- {'a':1,'b':2,'c':3}
+Ans  l1=[('a',1),('b',2),('c',3)]
+     d=dict()  // d={}
+     for k,v in l1:
+         d[k]=v
+     print(d)
+
+Q.3 l1 = ['a','b','c']
+    l2 = [1,2,3]
+    so we have two lists and i want to make the dictionary in which l1 will be the key and l2 will be the value
+Ans  l1 = ['a','b','c']
+     l2 = [1,2,3]
+     d={}
+     for i in range(len(l1)):
+         key=l1[i]
+         d[key]=l2[i]
+     print(d)
+
+Note- using the zip also we can do this things like zip(l1,l2) so jab bhi hum zip karte hai to ye hume tuples me dalkar deta hai jaise ('a',1),('b',2),('c',3) kuch is tarah se
+
+(ii) l1 = ['a','b','c']        note- so zip kya karta hai ki tuples ke roop me sabko combine karke de deta hai tuples me. hum phir use list me ya dict me convert kar sakte hai
+     l2 = [1,2,3]
+     l3=list(zip(l1,l2))    o/p- [('a',1),('b',2),('c',3)]
+     l3=dict(zip(l1,l2))    o/p- {'a':1,'b':2,'c':3}
+     print(l3)
+
+(iii) l1 = ['a','b','c']
+      l2 = [1,2,3]
+      l3 = [5,2,3]
+      l4=list(zip(l1,l2,l3))   o/p- [('a',1,5),('b',2,2),('c',3,3)]
+      print(l4)
+
+Note- it is not necessary that it combine only the same type of data. if different type of data is there then also it will combine in a tuple format
+
+
