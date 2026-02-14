@@ -92,16 +92,17 @@ Q.7 l1 = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
 
 
 
-Q.8)                                        
-d1 = {'a':10,'b':20,'c':30}                       d1 = {'a':10,'b':20,'c':30}
-d2 = {'b':15,'c':45,'d':40}                       d2 = {'b':15,'c':45,'d':40}
-o/p- {'b':20,'c':30}                              o/p- {'b':15,'c':30}
+Q.8)                                              make the idctionary which present in both the dictionary but having minimum value       Q find only the unique ones which is not their in both
+d1 = {'a':10,'b':20,'c':30}                       d1 = {'a':10,'b':20,'c':30}                                                                d1 = {'a':10,'b':20,'c':30}
+d2 = {'b':15,'c':45,'d':40}                       d2 = {'b':15,'c':45,'d':40}                                                                d2 = {'b':15,'c':45,'d':40}
+o/p- {'b':20,'c':30}                              o/p- {'b':15,'c':30}                                                                       o/p- {'a':10,'d':40}
 
-d3={}                                             d3={}
-for i in d1:                                      for i in d1:
-    if i in d2:                                       if i in d2:
-        d3[i]=d1[i]                                       if(d1[i]<d2[i]):
-print(d3)                                                     d3[i]=d1[i]
-                                                          else:
-                                                              d3[i]=d2[i]
-                                                  print(d3)
+d3={}                                             d3={}                                                                                      d3={}
+for i in d1:                                      for i in d1:                                                                               for i in d1:
+    if i in d2:                                       if i in d2:                                                                               if i not in d2:
+        d3[i]=d1[i]                                       if(d1[i]<d2[i]):                                                                          d3[i]=d1[i]
+print(d3)                                                     d3[i]=d1[i]                                 
+                                                          else:                                                                              for i in d2:
+                                                              d3[i]=d2[i]                                                                        if i not in d1:
+                                                  print(d3)                                                                                         d3[i]=d1[i]
+                                                                                                                                             print(d3)
