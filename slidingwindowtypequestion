@@ -1,0 +1,104 @@
+🟢 Sliding Window Master Set
+SECTION 1: Beginner – Fixed Size Window
+Q1. Maximum sum of subarray of size k
+arr = [2,1,5,1,3,2]
+k = 3
+# Output: 9  → [5,1,3]
+
+Q2. Minimum sum of subarray of size k
+arr = [2,1,5,1,3,2]
+k = 2
+# Output: 2 → [1,1]
+
+Q3. Average of all subarrays of size k
+arr = [1,2,3,4,5]
+k = 2
+# Output: [1.5,2.5,3.5,4.5]
+
+Q4. Count of subarrays of size k with sum = target
+arr = [1,2,1,1,2]
+k = 2
+target = 3
+# Output: 3 → [1,2],[2,1],[1,2]
+
+SECTION 2: Intermediate – Variable Size Window
+Q5. Longest substring with at most k distinct characters
+s = "eceba"
+k = 2
+# Output: 3 → "ece"
+
+Q6. Longest substring with all unique characters
+s = "abcabcbb"
+# Output: 3 → "abc"
+
+Q7. Count of subarrays with sum ≤ k
+arr = [1,2,3,4]
+k = 5
+# Output: 6 → [1],[2],[3],[4],[1,2],[2,3]
+
+Q8. Smallest subarray with sum ≥ s
+arr = [2,3,1,2,4,3]
+s = 7
+# Output: 2 → [4,3]
+
+SECTION 3: Advanced – Maximum/Minimum in Window
+Q9. Maximum in every sliding window of size k
+arr = [1,3,-1,-3,5,3,6,7]
+k = 3
+# Output: [3,3,5,5,6,7]
+
+Q10. Minimum in every sliding window of size k
+arr = [1,3,-1,-3,5,3,6,7]
+k = 3
+# Output: [-1,-3,-3,-3,3,3]
+
+Q11. Maximum sum of subarray with size ≤ k
+arr = [1,2,3,4,5]
+k = 3
+# Output: 12 → [3,4,5]
+
+Q12. Count of subarrays with exactly k distinct integers
+arr = [1,2,1,2,3]
+k = 2
+# Output: 7
+
+SECTION 4: Sliding Window + HashMap / Dictionary
+Q13. Longest substring without repeating characters
+s = "abcabcbb"
+# Output: 3 → "abc"
+
+Q14. Longest substring with exactly k unique characters
+s = "aabbcc"
+k = 2
+# Output: 4 → "aabb" or "bbcc"
+
+Q15. Count number of anagrams of p in s
+s = "cbaebabacd"
+p = "abc"
+# Output: [0,6]
+
+Q16. Minimum window substring containing all characters of t
+s = "ADOBECODEBANC"
+t = "ABC"
+# Output: "BANC"
+
+SECTION 5: Two Pointer + Sliding Window
+Q17. Longest subarray with sum ≤ k
+arr = [3,1,2,1,1]
+k = 4
+# Output: 3 → [1,2,1] or [2,1,1]
+
+Q18. Longest subarray with at most k zero flips
+arr = [1,0,1,1,0,0,1,1,1,0]
+k = 2
+# Output: 6 → flip two zeros to get longest 1's subarray
+
+Q19. Maximum consecutive ones after at most k flips
+arr = [1,0,1,0,1,1,0]
+k = 1
+# Output: 4
+
+Q20. Subarray product less than k
+arr = [10,5,2,6]
+k = 100
+# Output: 8 → a
