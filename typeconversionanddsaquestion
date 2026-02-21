@@ -1,4 +1,4 @@
-list=[2,5,3,7,9]
+(i )list=[2,5,3,7,9]
 list creating methods: a) l2=[] using the symbol
                        b) l2= list() using constructor method. this is used in the type conversion like sets to list, list to sets like this
                        c) l2= [2,5,3,7,9] with default values
@@ -27,7 +27,14 @@ m) y= min(l2)- min() function returns the minimum value from the list
 n) y= len(l2)- len() function returns the length of the list
 o) y= sum(l2)- sum() function returns the sum of all elemets of the list
 
-tuple- tuple is fixed and giving me the data based on the index. tuple me hum kuch bhi add, update aur delete nahi kar sakte hai
+p) extractng the element from the list:
+   lst = [10, 20, 30]
+   x, y, z = lst
+   print(x)
+   print(y)
+   print(z)
+
+(ii) tuple- tuple is fixed and giving me the data based on the index. tuple me hum kuch bhi add, update aur delete nahi kar sakte hai
 tuple=(2,5,3,7,9)
 tuple creating methods: a) t1=() using the symbol
                        b) t1= tuple() using constructor method. this is used in the type conversion like sets to list, list to sets like this
@@ -35,13 +42,36 @@ tuple creating methods: a) t1=() using the symbol
 
 
 tuple default methods:
+a) y= len(t2)- len() function returns the length of the tuple
 a) y= max(t2)- max() function returns the maximum value from the tuple 
 b) y= min(t2)- min() function returns the minimum value from the tuple
 c) y= len(t2)- len() function returns the length of the tuple
 d) y= sum(t2)- sum() function returns the sum of all elemets of the tuple
 e) y= l2.count(5) - it returns the count of the element
 f) y= t2.index(5)- it return the first occurance values index. means agar t2=(3,8,9,5,6,5,2) so o/p will be 3
+g) y= sorted(t2)- so ye tuple ko sorted karne ke bad list me data ko return karta hai so y=[2,5,3,7,9] this output and if i want to again convert it then i will do z= tuple(y)
 
+h) extracting the tuple- 
+   t1= (2,5,3,7,9)
+   a,b,c,d,e = t1
+   print(a)
+   print(b)
+   print(c)
+   print(d)
+   print(e)
+ex-1 go through the each element through the loop
+t1=(2,5,3,7,9)
+for i in t1:
+    print(i)
+
+(iii) sets()- sets jo hota hai uska symbol {} ye hota hai, ye random data hai, index se data nahi nikal sakte hai
+      sets creating methods: a) s1={} we can't do it like this because the same symbol used for the dictionary so we can't make empty set like this
+                       b) s1= set() using constructor method. this is used in the type conversion like sets to list, list to sets like this
+                       c) s1= {2,5,3,7,9} with default values
+
+(i) add(data)- add() method jo hai wo data ko add karta hai sets me ex- s1.add(10) o/p- {2,5,3,7,9,10}
+(ii) update({1,2,3,4}) - add all these values in the sets   s1.update({2,4,6}) o/p- {2,5,3,7,9,10,4,6}
+ex-2
 Q.1 d = {'a':1,'b':2,'c':3}   o/p- [('a',1),('b',2),('c',3)]
 Ans (i) l1=list(d.items())
    (ii) l1=[]
