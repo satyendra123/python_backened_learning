@@ -14,7 +14,7 @@ c) insert(index,data)- means kis index par data ko insert karna hai
    l2.insert(2,17)  o/p- [2,5,17,3,7,9]
 
 d) extend([2,3,4])- pure ke pure list ko end me append kar deta hai  o/p-[2,5,3,7,9,2,3,4]
-e) indexOf(value)- us values ka index deta hai indexOf(5) o/p- 1
+e) index(value)- us values ka index deta hai indexOf(5) o/p- 1
 f) l2.remove(data)- agar wo data rahega to us data ko remove kar dega nahi to None dega   l2.remove(5)   o/p- l2=[2,3,7,9]
 g) clear()- pure ke pure list ko empty kar dega   o/p- l2=[]
 
@@ -26,6 +26,21 @@ l) y= max(l2)- max() function returns the maximum value from the list
 m) y= min(l2)- min() function returns the minimum value from the list
 n) y= len(l2)- len() function returns the length of the list
 o) y= sum(l2)- sum() function returns the sum of all elemets of the list
+
+tuple- tuple is fixed and giving me the data based on the index. tuple me hum kuch bhi add, update aur delete nahi kar sakte hai
+tuple=(2,5,3,7,9)
+tuple creating methods: a) t1=() using the symbol
+                       b) t1= tuple() using constructor method. this is used in the type conversion like sets to list, list to sets like this
+                       c) t1= (2,5,3,7,9) with default values
+
+
+tuple default methods:
+a) y= max(t2)- max() function returns the maximum value from the tuple 
+b) y= min(t2)- min() function returns the minimum value from the tuple
+c) y= len(t2)- len() function returns the length of the tuple
+d) y= sum(t2)- sum() function returns the sum of all elemets of the tuple
+e) y= l2.count(5) - it returns the count of the element
+f) y= t2.index(5)- it return the first occurance values index. means agar t2=(3,8,9,5,6,5,2) so o/p will be 3
 
 Q.1 d = {'a':1,'b':2,'c':3}   o/p- [('a',1),('b',2),('c',3)]
 Ans (i) l1=list(d.items())
