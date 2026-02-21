@@ -14,7 +14,7 @@ c) insert(index,data)- means kis index par data ko insert karna hai
    l2.insert(2,17)  o/p- [2,5,17,3,7,9]
 
 d) extend([2,3,4])- pure ke pure list ko end me append kar deta hai  o/p-[2,5,3,7,9,2,3,4]
-e) index(value)- us values ka index deta hai indexOf(5) o/p- 1
+e) index(value)- us values ka index deta hai index(5) o/p- 1
 f) l2.remove(data)- agar wo data rahega to us data ko remove kar dega nahi to None dega   l2.remove(5)   o/p- l2=[2,3,7,9]
 g) clear()- pure ke pure list ko empty kar dega   o/p- l2=[]
 
@@ -69,8 +69,30 @@ for i in t1:
                        b) s1= set() using constructor method. this is used in the type conversion like sets to list, list to sets like this
                        c) s1= {2,5,3,7,9} with default values
 
-(i) add(data)- add() method jo hai wo data ko add karta hai sets me ex- s1.add(10) o/p- {2,5,3,7,9,10}
-(ii) update({1,2,3,4}) - add all these values in the sets   s1.update({2,4,6}) o/p- {2,5,3,7,9,10,4,6}
+(a) add(data)- add() method jo hai wo data ko add karta hai sets me ex- s1.add(10) o/p- {2,5,3,7,9,10}
+(b) update({1,2,3,4}) - add all these values in the sets   s1.update({2,4,6}) o/p- {2,5,3,7,9,10,4,6}
+c) pop() or pop(index)- jab pop() likhte hai to koi bhi random value return karta hai kyuki set jo hai order maintain nahi karta hai index ke sath me
+    x= s1.pop() note- so chuki pop value return karta hai isliye ek variable le liye x taki pop jo return kar rha hai wo value ko variable me save kar lenge
+    print(x)  o/p- 3
+    print(s1) o/p- {2,5,7,9}
+
+f) s1.remove(data)- agar wo data rahega to us data ko remove kar dega aur agar data nahi rhega to error dega. so iski jagah par hum dispatch(data) ka use karte hai. agar data rhega to remove kar dega aur agar data nahi rhega to None return krega
+g) clear()- pure ke pure list ko empty kar dega   o/p- s1={}
+
+h) y= s1.count(5)- error dega kyuki set me count method hota hi nahi hai kyuki jab set duplicates data ko allow hi nahi karta hai to hume count kaha se milega kisi data ka
+
+i) s1.sort() - Set unordered hota hai, Sorting ka concept direct set pe apply nahi hota hai. hum ise sorted se kar sakte hai kuch is tarah se 
+s1={2,5,3,7,9}
+sorted_s = sorted(s1) note- ye jo sorted method hai wo list return karta hai hume
+print(sorted_s)
+
+j) l2.reverse()- order maintain nahi karta hai to set me reverse method bhi nahi hota hai
+l) y= max(l2)- max() function returns the maximum value from the sets 
+m) y= min(l2)- min() function returns the minimum value from the sets
+n) y= len(l2)- len() function returns the length of the sets
+o) y= sum(l2)- sum() function returns the sum of all elemets of the sets
+
+Note- hum for loop nahi chala sakte hai isme kyuki ye randome values deta hai kyuki ye index based par order ko maintain karke nahi rakhta hai
 ex-2
 Q.1 d = {'a':1,'b':2,'c':3}   o/p- [('a',1),('b',2),('c',3)]
 Ans (i) l1=list(d.items())
