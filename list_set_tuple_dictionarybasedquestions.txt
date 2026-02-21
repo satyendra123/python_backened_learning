@@ -1,0 +1,297 @@
+(i )list=[2,5,3,7,9]
+list creating methods: a) l2=[] using the symbol
+                       b) l2= list() using constructor method. this is used in the type conversion like sets to list, list to sets like this
+                       c) l2= [2,5,3,7,9] with default values
+
+list methods: l2=[2,5,3,7,9]
+a) append(data)- add the elements at the end      ex- l2.append(10)    o/p- [2,5,3,7,9,10]
+b) pop() or pop(index)- jab pop() likhte hai to ye last values ko nikal kar return karta hai last element ko aur us list me se bhi us data ko remove kar deta hai. aur agar index likhenge to wo index wala data return karega
+    x= l2.pop() note- so chuki pop value return karta hai isliye ek variable le liye x taki pop jo return kar rha hai wo value ko variable me save kar lenge
+    print(x)  o/p- 9
+    print(l2) o/p- [2,5,3,7]
+
+c) insert(index,data)- means kis index par data ko insert karna hai
+   l2.insert(2,17)  o/p- [2,5,17,3,7,9]
+
+d) extend([2,3,4])- pure ke pure list ko end me append kar deta hai  o/p-[2,5,3,7,9,2,3,4]
+e) index(value)- us values ka index deta hai index(5) o/p- 1
+f) l2.remove(data)- agar wo data rahega to us data ko remove kar dega nahi to None dega   l2.remove(5)   o/p- l2=[2,3,7,9]
+g) clear()- pure ke pure list ko empty kar dega   o/p- l2=[]
+
+h) y= l2.count(5)- count(5) it returns the count of that value
+i) l2.sort() - by default it sort in ascending order o/p- [2,3,5,7,9], and for descending we will write l2.sort(reverse=True)
+j) l2.reverse()- it gives me the reverse of the list o/p- [9,7,3,5,2]
+k) l3= l2[1:4]- ye jo hai slice kar deta hai list ko aur new list return karta hai index 1 se index 3 tak ka data so l3=[5,3,7]
+l) y= max(l2)- max() function returns the maximum value from the list  
+m) y= min(l2)- min() function returns the minimum value from the list
+n) y= len(l2)- len() function returns the length of the list
+o) y= sum(l2)- sum() function returns the sum of all elemets of the list
+
+p) extractng the element from the list:
+   lst = [10, 20, 30]
+   x, y, z = lst
+   print(x)
+   print(y)
+   print(z)
+
+(ii) tuple- tuple is fixed and giving me the data based on the index. tuple me hum kuch bhi add, update aur delete nahi kar sakte hai
+tuple=(2,5,3,7,9)
+tuple creating methods: a) t1=() using the symbol
+                       b) t1= tuple() using constructor method. this is used in the type conversion like sets to list, list to sets like this
+                       c) t1= (2,5,3,7,9) with default values
+
+
+tuple default methods:
+a) y= len(t2)- len() function returns the length of the tuple
+a) y= max(t2)- max() function returns the maximum value from the tuple 
+b) y= min(t2)- min() function returns the minimum value from the tuple
+c) y= len(t2)- len() function returns the length of the tuple
+d) y= sum(t2)- sum() function returns the sum of all elemets of the tuple
+e) y= l2.count(5) - it returns the count of the element
+f) y= t2.index(5)- it return the first occurance values index. means agar t2=(3,8,9,5,6,5,2) so o/p will be 3
+g) y= sorted(t2)- so ye tuple ko sorted karne ke bad list me data ko return karta hai so y=[2,5,3,7,9] this output and if i want to again convert it then i will do z= tuple(y)
+
+h) extracting the tuple- 
+   t1= (2,5,3,7,9)
+   a,b,c,d,e = t1
+   print(a)
+   print(b)
+   print(c)
+   print(d)
+   print(e)
+ex-1 go through the each element through the loop
+t1=(2,5,3,7,9)
+for i in t1:
+    print(i)
+
+(iii) sets()- sets jo hota hai uska symbol {} ye hota hai, ye random data hai, index se data nahi nikal sakte hai
+      sets creating methods: a) s1={} we can't do it like this because the same symbol used for the dictionary so we can't make empty set like this
+                       b) s1= set() using constructor method. this is used in the type conversion like sets to list, list to sets like this
+                       c) s1= {2,5,3,7,9} with default values
+
+(a) add(data)- add() method jo hai wo data ko add karta hai sets me ex- s1.add(10) o/p- {2,5,3,7,9,10}
+(b) update({1,2,3,4}) - add all these values in the sets   s1.update({2,4,6}) o/p- {2,5,3,7,9,10,4,6}
+c) pop() or pop(index)- jab pop() likhte hai to koi bhi random value return karta hai kyuki set jo hai order maintain nahi karta hai index ke sath me
+    x= s1.pop() note- so chuki pop value return karta hai isliye ek variable le liye x taki pop jo return kar rha hai wo value ko variable me save kar lenge
+    print(x)  o/p- 3
+    print(s1) o/p- {2,5,7,9}
+
+f) s1.remove(data)- agar wo data rahega to us data ko remove kar dega aur agar data nahi rhega to error dega. so iski jagah par hum dispatch(data) ka use karte hai. agar data rhega to remove kar dega aur agar data nahi rhega to None return krega
+g) clear()- pure ke pure list ko empty kar dega   o/p- s1={}
+
+h) y= s1.count(5)- error dega kyuki set me count method hota hi nahi hai kyuki jab set duplicates data ko allow hi nahi karta hai to hume count kaha se milega kisi data ka
+
+i) s1.sort() - Set unordered hota hai, Sorting ka concept direct set pe apply nahi hota hai. hum ise sorted se kar sakte hai kuch is tarah se 
+s1={2,5,3,7,9}
+sorted_s = sorted(s1) note- ye jo sorted method hai wo list return karta hai hume
+print(sorted_s)
+
+j) l2.reverse()- order maintain nahi karta hai to set me reverse method bhi nahi hota hai
+l) y= max(l2)- max() function returns the maximum value from the sets 
+m) y= min(l2)- min() function returns the minimum value from the sets
+n) y= len(l2)- len() function returns the length of the sets
+o) y= sum(l2)- sum() function returns the sum of all elemets of the sets
+
+Note- hum for loop nahi chala sakte hai isme kyuki ye randome values deta hai kyuki ye index based par order ko maintain karke nahi rakhta hai
+ex-2
+Q.1 d = {'a':1,'b':2,'c':3}   o/p- [('a',1),('b',2),('c',3)]
+Ans (i) l1=list(d.items())
+   (ii) l1=[]
+        for i in l1:
+            l1.push((i,d[i]))
+        print(l1)
+  
+Q.2  [('a',1),('b',2),('c',3)]  o/p- {'a':1,'b':2,'c':3}
+Ans  l1=[('a',1),('b',2),('c',3)]
+     d=dict()  // d={}
+     for k,v in l1:
+         d[k]=v
+     print(d)
+
+Q.3 l1 = ['a','b','c']
+    l2 = [1,2,3]
+    so we have two lists and i want to make the dictionary in which l1 will be the key and l2 will be the value
+Ans  l1 = ['a','b','c']
+     l2 = [1,2,3]
+     d={}
+     for i in range(len(l1)):
+         key=l1[i]
+         d[key]=l2[i]
+     print(d)
+
+Note- using the zip also we can do this things like zip(l1,l2) so jab bhi hum zip karte hai to ye hume tuples me dalkar deta hai jaise ('a',1),('b',2),('c',3) kuch is tarah se
+
+(ii) l1 = ['a','b','c']        note- so zip kya karta hai ki tuples ke roop me sabko combine karke de deta hai tuples me. hum phir use list me ya dict me convert kar sakte hai
+     l2 = [1,2,3]
+     l3=list(zip(l1,l2))    o/p- [('a',1),('b',2),('c',3)]
+     l3=dict(zip(l1,l2))    o/p- {'a':1,'b':2,'c':3}
+     print(l3)
+
+(iii) l1 = ['a','b','c']
+      l2 = [1,2,3]
+      l3 = [5,2,3]
+      l4=list(zip(l1,l2,l3))   o/p- [('a',1,5),('b',2,2),('c',3,3)]
+      print(l4)
+
+Note- it is not necessary that it combine only the same type of data. if different type of data is there then also it will combine in a tuple format
+
+
+Q.4  0/p- {'a':15,'b':35,'c':30,'d':40} i want this type of output from two dictionary
+d1 = {'a':10,'b':20,'c':30}
+d2 = {'a':5,'b':15,'d':40}
+
+d3={}
+for k in d1:
+    if k in d3:
+        d3[k]=d1[k]+d2[k]
+    else:
+        d3[k]=d1[k]
+
+for k in d2:
+    if k in d3:
+        d3[k]=d3[k]+d2[k]
+    else:
+        d3[k]=d2[k]
+        
+print(d3)
+        
+Q.5 d = {'a':1, 'b':2, 'c':1, 'd':2, 'e':3} mere pass ye input hai aur mai output chahta hu kuch is tarah ka. ise hum inverting dictionary bhi bolte hai
+o/p- {'1':[a,c], '2':[b,d],'3':e}                                  alternate method:      d = {'a':1, 'b':2, 'c':1, 'd':2, 'e':3}
+                                                                                          unique_values = set(d.values())
+result = {}                                                                               result = {}
+for i in d:                                                                             for val in unique_values:
+    value = d[i]                                                                             keys_list = []
+    if value not in result:                                                                    for key in d:
+        result[value] = []                                                                         if d[key] == val:
+    result[value].append(i)                                                                         keys_list.append(key)
+                                                                                                   result[val] = keys_list
+print(result)                                                                              print(result)
+
+Q.6 l1=[1,2,3,4,5,6,7,8,9,10]      o/p- {'odd':[1,3,5,7,9], 'even':[2,4,6,8]}
+l1=[1,2,3,4,5,6,7,8,9,10]
+d={'odd':[],'even':[]}
+for i in l1:
+    if i%2==0:
+        d['even'].append(i)
+    
+    else:
+        d['odd'].append(i)
+        
+print(d)
+
+Q.7 l1 = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
+
+
+
+
+
+
+
+
+Q.8)                                              make the idctionary which present in both the dictionary but having minimum value       Q find only the unique ones which is not their in both
+d1 = {'a':10,'b':20,'c':30}                       d1 = {'a':10,'b':20,'c':30}                                                                d1 = {'a':10,'b':20,'c':30}
+d2 = {'b':15,'c':45,'d':40}                       d2 = {'b':15,'c':45,'d':40}                                                                d2 = {'b':15,'c':45,'d':40}
+o/p- {'b':20,'c':30}                              o/p- {'b':15,'c':30}                                                                       o/p- {'a':10,'d':40}
+
+d3={}                                             d3={}                                                                                      d3={}
+for i in d1:                                      for i in d1:                                                                               for i in d1:
+    if i in d2:                                       if i in d2:                                                                               if i not in d2:
+        d3[i]=d1[i]                                       if(d1[i]<d2[i]):                                                                          d3[i]=d1[i]
+print(d3)                                                     d3[i]=d1[i]                                 
+                                                          else:                                                                              for i in d2:
+                                                              d3[i]=d2[i]                                                                        if i not in d1:
+                                                  print(d3)                                                                                         d3[i]=d1[i]
+                                                                                                                                             print(d3)
+
+Q. students = {'A': 85,'B': 72,'C': 91,'D': 65,'E': 78}          
+#o/p- {'above_80':[A,C],'70to80':[B,D],'below_70':[D]}
+
+d={'above_80':[],'70to80':[],'below_70':[]}
+for student in students:
+    if students[student]>80:
+        d['above_80'].append(student)
+    elif (students[student]>70 and students[student]<80):
+        d['70to80'].append(student)
+    else:
+        d['below_70'].append(student)
+print(d)
+
+Note- solve these questions to improve your logic building
+PART 1: Two Lists (Arrays) – Beginner
+
+Assume:
+let names = ["ram", "shyam", "mohan"];
+let marks = [45, 78, 62];
+
+(i)Create an object like { ram: 45, shyam: 78, mohan: 62 }
+(ii) Print the name of the student who scored the highest marks    o/p- Highest scorer: shyam 
+(iii) Print the name of the student who scored the lowest marks    o/p- Lowest scorer: ram
+(iv) Print all students who scored more than 60 o/p-   Students scoring more than 60: [ 'shyam', 'mohan' ]
+(v) Find the average marks  o/p- Average marks: 61.666666666666664
+(vi) Sort students by marks (ascending) o/p- [ [ 'shyam', 78 ], [ 'mohan', 62 ], [ 'ram', 45 ] ]
+(vii) Sort students by marks (descending) o/p- [ [ 'ram', 45 ], [ 'mohan', 62 ], [ 'shyam', 78 ] ]
+(viii) Print output like: ram scored 45, shyam scored 78, mohan scored 62
+(ix) Count how many students passed (marks ≥ 50) o/p- count=2
+(x) Create a new array of only marks greater than 50  o/p- { shyam: 78, mohan: 62 }
+
+PART 2: Two Lists – Tricky Logic
+
+Assume:
+let l1 = ["a", "b", "c", "d"];
+let l2 = [10, 20, 30, 40];
+
+(i) Create an object using a loop   o/p- {a:10,b:20,c:30,d:40}
+(ii) Find the sum of all values     o/p- sum=100
+(iii) Remove the key "c" from the object o/p- {a:10,b:20,d:40}
+(iv) Increase every value by 5      o/p- {a:15,b:25,c:35,d:45}
+(v) Convert the object back to two arrays  o/p- l1=[a,b,c,d], l2=[15,25,35,45]
+(vi) Swap keys and values o/p-  {10:"a",20:"b",30:c,40:d}
+(vii)Find the key whose value is 30   o/p- c
+(viii) Check if value 25 exists       o/p- false
+(ix) Create a new object with only even values {a:10,b:20,d:40]
+(x) Multiply all values by 2   o/p- {a:20,b:40,d:80}
+
+PART 3: Two Dictionaries (Objects) – Beginner
+
+Assume:
+let d1 = { a: 10, b: 20, c: 30 };
+let d2 = { b: 5, c: 15, d: 25 };
+
+(i) Find common keys    o/p- ["b", "c"]
+(ii) Find keys present only in d1 o/p- ["a"]
+(iii) Find keys present only in d2 o/p- ["d"]
+(iv) Merge both objects  Note- (values from d2 overwrite d1 if key is same) o/p { a: 10, b: 5, c: 15, d: 25 } 
+(v) For common keys, add their values Output: { a:10, b:25, c:45, d:25 }
+(vi) Find the total sum of all values  o/p- 105
+(vii) Count total number of keys       o/p- 4
+(viii) Find the key with maximum value o/p- "c" 
+(ix) Find the key with minimum value   o/p- "a"
+(x) Convert object to array of [key, value] o/p- [["a", 10],["b", 25],["c", 45],["d", 25]]
+
+PART 4: Two Dictionaries – Tricky / Interview Level
+
+let d1 = { a: 10, b: 20, c: 30 };
+let d2 = { b: 25, c: 15, d: 25 };
+
+
+(i) find the union with min values o/p- {a:10,b:20,c:15,d:25}
+(iI) find the union with max values o/p- {a:10,b:25,c:30,d:25}
+(iii) Create intersection object (only common keys with summed values) o/p- {b:45,c:45}
+(iv) Create union object (all keys, sum if common) o/p- {a:10,b:45,c:45,d:25}
+(v) Create difference object (d1 - d2)   o/p- { a: 10 } means jo kewal d1 me ho par d2 me nahi ho
+(vi) Create symmetric difference object  o/p- {a: 10,d: 25}
+(vii) Sort object by values   o/p- { d1: { a: 10, b: 20, c: 30 },d2: { c: 15, b: 25, d: 25 }}
+(viii) Check if both objects are equal
+(ix) Find duplicate values across both objects 
+(x) Multiply values of d1 by corresponding values of d2 (common keys only) o/p- {b:500,c:450}
+(xi) Create an array of keys whose value > 20  o/p- [b,c,d]
+(xii )Remove keys whose value < 15   o/p- { d1: { b: 20, c: 30 },d2: { b: 25, c: 15, d: 25 }}
+(xiii) Group keys by even and odd values  o/p- { even: ["a", "b", "c"], odd: ["b", "c", "d"]}
+(ix) Find missing keys between two objects  o/p- { missingInD1: ["d"], missingInD2: ["a"]}
+(x) Validate if an object has duplicate values  o/p- {d1: false,d2: true}
+(xi) group based on the keys o/p- {a:10, b:[20,25],c:[30,15],d:25}
+(xii) group based on the values o/p- {10:a,15:c,20:b,25:[b,d]30:c}
+(xi) Validate duplicate values  o/p- false  
+for thinking
+d1 → values: [10, 20, 30] → all unique ❌ no duplicates
+d2 → values: [25, 15, 25] → 25 appears twice ✅ duplicate exists
