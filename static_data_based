@@ -44,10 +44,15 @@ print(result)
     
 
 
-Q.3
-Convert orders into this response:
+Q.3 Convert orders into this response:
 {
   "total_orders": 5,
   "total_amount": 1700,
   "shipped_amount": 1150
 }
+
+Q.4 Find orders where amount >= 300
+[
+   {"order_id": 2, "customer_id": 102, "amount": 450, "status": "pending", "created_at": "2026-01-02 12:00"},
+   {"order_id": 4, "customer_id": 103, "amount": 700, "status": "shipped", "created_at": "2026-01-04 09:00"},
+]
