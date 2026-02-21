@@ -42,3 +42,12 @@ print(result)
 2)
 
     
+
+
+Q.3
+Convert orders into this response:
+{
+  "total_orders": 5,
+  "total_amount": 1700,
+  "shipped_amount": 1150
+}
