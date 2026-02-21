@@ -56,3 +56,17 @@ Q.4 Find orders where amount >= 300
    {"order_id": 2, "customer_id": 102, "amount": 450, "status": "pending", "created_at": "2026-01-02 12:00"},
    {"order_id": 4, "customer_id": 103, "amount": 700, "status": "shipped", "created_at": "2026-01-04 09:00"},
 ]
+
+Q.5 Pagination logic (VERY important)
+Page = 1, Limit = 2
+[
+  {"order_id": 1, "customer_id": 101, "amount": 250, "status": "shipped", "created_at": "2026-01-01 10:00"},
+  {"order_id": 2, "customer_id": 102, "amount": 450, "status": "pending", "created_at": "2026-01-02 12:00"},
+]
+
+Q.6) Group orders by customer
+{
+  101: [{"order_id": 1, "customer_id": 101, "amount": 250, "status": "shipped", "created_at": "2026-01-01 10:00"},{"order_id": 3, "customer_id": 101, "amount": 100, "status": "cancelled", "created_at": "2026-01-03 15:00"},{"order_id": 5, "customer_id": 101, "amount": 200, "status": "shipped", "created_at": "2026-01-05 18:00"} ],
+  102: [{"order_id": 2, "customer_id": 102, "amount": 450, "status": "pending", "created_at": "2026-01-02 12:00"}],
+  103: [{"order_id": 4, "customer_id": 103, "amount": 700, "status": "shipped", "created_at": "2026-01-04 09:00"},]
+}
