@@ -18,13 +18,14 @@ e) indexOf(value)- us values ka index deta hai indexOf(5) o/p- 1
 f) l2.remove(data)- agar wo data rahega to us data ko remove kar dega nahi to None dega   l2.remove(5)   o/p- l2=[2,3,7,9]
 g) clear()- pure ke pure list ko empty kar dega   o/p- l2=[]
 
-j) y= l2.count(5)- count(5) it returns the count of that value
-k) l2.sort() - by default it sort in ascending order o/p- [2,3,5,7,9], and for descending we will write l2.sort(reverse=True)
-l) 
-
-h) y= max(l2)- max() function returns the maximum value from the list  
-i) y= min(l2)- min() function returns the minimum value from the list
-
+h) y= l2.count(5)- count(5) it returns the count of that value
+i) l2.sort() - by default it sort in ascending order o/p- [2,3,5,7,9], and for descending we will write l2.sort(reverse=True)
+j) l2.reverse()- it gives me the reverse of the list o/p- [9,7,3,5,2]
+k) l3= l2[1:4]- ye jo hai slice kar deta hai list ko aur new list return karta hai index 1 se index 3 tak ka data so l3=[5,3,7]
+l) y= max(l2)- max() function returns the maximum value from the list  
+m) y= min(l2)- min() function returns the minimum value from the list
+n) y= len(l2)- len() function returns the length of the list
+o) y= sum(l2)- sum() function returns the sum of all elemets of the list
 
 Q.1 d = {'a':1,'b':2,'c':3}   o/p- [('a',1),('b',2),('c',3)]
 Ans (i) l1=list(d.items())
