@@ -203,6 +203,39 @@ print(d3)                                                     d3[i]=d1[i]
                                                   print(d3)                                                                                         d3[i]=d1[i]
                                                                                                                                              print(d3)
 
+Q. d={'ram':45,'shyam':78,'mohan':67} in this question i need to sort it into the ascending order without using any builtin function
+o/p- {'ram':45,'mohan':67,'shyam':78}
+
+#step-1 convert it into the list of lists ex like this [['ram',45],['shyam',78],['mohan',67]]
+result=[]
+for i in d:
+    result.append([i,d[i])    
+
+print(result)                  # result= [['ram',45],['shyam',78],['mohan',67]]
+
+# step-2 apply the sorting in this
+for i in range(len(result)):
+    for j in range(i+1,len(result)):
+        if(result[i][1]>result[j][1]):
+            temp = result[i]
+            result[i] = result[j]
+            result[j] = temp
+
+print(result)                # result = [['ram',45],['mohan',67],['shyam',78]]
+
+# step-3 now convert it into the dictionary
+new_data = {}
+for k,v in result:
+    new_data[k]=v
+
+print(new_data)             # new_data = {'ram':45,'mohan':67,'shyam':78}
+
+# Step 4: lowest, middle, highest
+lowest = result[0]
+middle = result[len(result)//2]
+highest = result[len(result) - 1]
+
+
 Q. students = {'A': 85,'B': 72,'C': 91,'D': 65,'E': 78}          
 #o/p- {'above_80':[A,C],'70to80':[B,D],'below_70':[D]}
 
