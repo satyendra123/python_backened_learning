@@ -253,7 +253,7 @@ print(d)
 some list based question:
 1) reverse the list
 2) check the list is palindrome or not
-3) check two list are same or not
+3) check two list are same or not using both cases (i) order is not matter (ii) order is also matter
 4) Check if a list is sorted or not
 5) sort the list in the ascending order
 6) serching of the list
@@ -285,13 +285,17 @@ some list based question:
 32) Split list into chunks of size k
 33) Flatten a nested list  [1,[2,3],[4,[5]]]
 
-
-
-
-
-
-
-
+Ans-1) so there are two approach. the first one is using the other list and second approach is changing in the same array
+lst=[3,2,4,6,35]                          (ii) lst = [3,2,4,6,35] second approach is changing in the same list. so we will use two pointer method
+#using two list                                i=0;                                                  
+new_list = []                                  j= lst.length()-1
+for i in range(len(lst)):                      while(i<j):
+    new_list.insert(0,lst[i])                      temp = lst[i]
+print(new_list)                                    lst[i] = lst[j]
+                                                   lst[j] =  temp
+                                                   i+=1
+                                                   j-=1
+                                               print(lst)
 
 
 some string based question
