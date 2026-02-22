@@ -249,6 +249,52 @@ for student in students:
         d['below_70'].append(student)
 print(d)
 
+
+some list based question:
+1) reverse the list
+2) check the list is palindrome or not
+3) check two list are same or not
+4) Check if a list is sorted or not
+5) sort the list in the ascending order
+6) serching of the list
+7) remove duplicate from the list
+8) move zero's at the end of the list
+9) two sum, three sum problem means group of numbers whose sum is 7 like this
+10) l=[2,4,7,9,10] give me the new list with multiply by 3 in each
+11) Find the maximum and minimum element without using max() / min()
+12) Calculate the sum of all elements without using sum()
+13) Find the largest and second largest element in a list
+14) Find the frequency of each element
+15) Count how many times a given element appears
+16) Create a new list of only positive numbers
+17) Create a new list of only negative numbers
+18) Replace all negative numbers with 0
+19) Remove duplicates from a sorted list (in-place)
+20) Find pair whose sum is equal to target
+21) Find pair whose sum is less than target
+22) Move all negative numbers to the left and positives to the right
+23) Separate even numbers first, then odd numbers
+24) Rotate a list by k positions ex [1,2,3,4,5] , k=2 → [4,5,1,2,3]
+25) Find intersection of two lists
+26) Find union of two lists
+27) Find common elements between two lists
+28) Subarray with given sum
+29) Product of array except itself [1,2,3,4] → [24,12,8,6]
+30) Remove all elements that appear more than once
+31) Find first non-repeating element
+32) Split list into chunks of size k
+33) Flatten a nested list  [1,[2,3],[4,[5]]]
+
+
+
+
+
+
+
+
+
+
+some string based question
 Note- solve these questions to improve your logic building
 PART 1: Two Lists (Arrays) – Beginner
 
