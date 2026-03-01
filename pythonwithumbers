@@ -1,0 +1,36 @@
+1) extract the number
+
+
+
+
+
+
+
+
+
+3) to check whether the number is palindrome or not  
+num=121                                                            (ii)  num = 121
+n=num                                                                    new_number = str(num)                                                                   
+reverse=0                                                                palindrome = True
+ 
+while n>0:                                                               for i in range(len(new_number) // 2):
+    last_digit=n%10                                                          if new_number[i] != new_number[len(new_number) - 1 - i]:
+    reverse=(reverse*10)+last_digit                                               palindrome = False
+    n = int(n/ 10)                                                                break
+                                                                                   
+if reverse==num:                                                         if palindrome:
+    print("number is palindrome")                                           print("number is palindrome")
+else:                                                                    else:
+    print("number is not palindrome")                                        print("number is not palindrome")
+
+                
+
+
+    
+       
+       
+
+
+    
+
+   
