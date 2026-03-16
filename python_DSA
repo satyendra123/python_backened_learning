@@ -1,4 +1,20 @@
-# selection sorting=> isme hum kya karte hai ki index ke hisab se karte hai. pahle index man lo 0 hai ise min man lete hai aur j ki har value ke sath compare karte hai. aur jaha ise 
+#1st normal way- in this we 
+nums = [15, 28, 7, 6, 12]
+n = len(nums)
+
+for i in range(0, n):
+    for j in range(i + 1, n):
+        if nums[i] > nums[j]:
+            nums[i], nums[j] = nums[j], nums[i]
+
+print(nums)
+
+1st case- i = 0, j = 1, 15 > 28 → False, No swap => [15, 28, 7, 6, 12] now for j=2 so 15 > 7 → True so Swap [7, 28, 15, 6, 12], now for j=3 7 > 6 → True Swap [6, 28, 15, 7, 12], now for j=4 6 > 12 → False No swap [6, 28, 15, 7, 12]. 
+2nd case- i=1, j=2 
+
+Note- is case me multiple swapping hota hai so ye optimal solution nahi hai. yaha hum dekh sakte hai ki first case me hi hume kitni bar swapping karna padh gaya. so is chiz ko hum selection sort se solve karte hai. isme hum value par nahi index par kaam karte hai aur ek case me kewal ek bar hi swapping karate hai
+
+#2nd selection sorting=> isme hum kya karte hai ki index ke hisab se karte hai. pahle index man lo 0 hai ise min man lete hai aur j ki har value ke sath compare karte hai. aur jaha ise 
 nums = [5, 28, 7, 19, 12]
 n=len(nums)
 
