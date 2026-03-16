@@ -1,0 +1,19 @@
+# selection sorting=> isme hum kya karte hai ki index ke hisab se karte hai. pahle index man lo 0 hai ise min man lete hai aur j ki har value ke sath compare karte hai. aur jaha ise 
+nums = [5, 28, 7, 19, 12]
+n=len(nums)
+
+for i in range(0,n-1):
+    min_index=i
+    for j in range(i+1,n):
+        if nums[min_index]> nums[j]:
+            min_index=j
+            
+    nums[i], nums[min_index] = nums[min_index], nums[i]
+    
+print(nums)
+
+step-1 min_index=0, so j ki har value se compare karte hai jaise 28 se to min_index chhota hai so j ko aage badhaye to 7 aaya ye bhi badha hai, 19 bhi badha hai, 12 bhi badha hai. so swapping nahi chala kisi ke liye first step me
+step-2 min_index=1, means 28 so j=7 so j chhota hai so min_index ab j ho jayega aur swap kar denge so 5,7,28,19,12 abhi tak. so min_index me ab 7 ho gya hai so 19 se compare karo, phir 12 se to ab kahi bhi swapping nahi hui so 2nd case me 5,7,28,19,12 ye mila
+step-3 so loop end ho gaya so ab min_index ki value phir se badh gayi so ab min_index=3 ho gaya. iska matlab ki aisa nahi hai ki min_index ki value ek loop ke liye fix hai wo bhi change ho rhi hai dynamically and one loop ke bad hum phir se min_index ko update kar rhe hai i se taki. means min_index jo hai j ke liye badal raha hai aur pura loop complete hone ke bad hum phir se min_index ki value ko update kar rhe hai
+
+#bubble sort
